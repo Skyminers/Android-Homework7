@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Video Player</string>
+    <string name="image">Image</string>
+    <string name="video">video</string>
 </resources>
