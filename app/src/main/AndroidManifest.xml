@@ -23,7 +23,17 @@
         </activity>
         <activity android:name=".ImageActivity" />
         <activity android:name=".VideoActivity"
-            android:configChanges="orientation|screenSize"/>
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="uri" android:mimeType="audio/wav"/>
+                <data android:scheme="uri" android:mimeType="audio/x-ms-wma"/>
+                <data android:scheme="uri" android:mimeType="video/x-ms-wmv"/>
+                <data android:scheme="uri" android:mimeType="audio/mpeg"/>
+                <data android:scheme="uri" android:mimeType="audio/mid"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
