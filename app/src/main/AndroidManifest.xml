@@ -22,7 +22,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ImageActivity" />
-        <activity android:name=".VideoActivity" />
+        <activity android:name=".VideoActivity"
+            android:configChanges="orientation|screenSize"/>
     </application>
 
 </manifest>

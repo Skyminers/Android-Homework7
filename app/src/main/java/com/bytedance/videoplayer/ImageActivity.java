@@ -24,6 +24,7 @@ public class ImageActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image);
+        setTitle("Image");
         imageView = findViewById(R.id.image);
         editText = findViewById(R.id.text);
         button = findViewById(R.id.submit);
